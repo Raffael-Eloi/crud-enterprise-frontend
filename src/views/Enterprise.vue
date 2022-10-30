@@ -74,7 +74,7 @@
                     </router-link>
                     <i
                       class="fa-solid fa-trash me-3 text-danger"
-                      @click.prevent="deleteRequirementModal(file)"
+                      @click.prevent="deleteEnterprise()"
                     ></i>
                   </b-td>
                 </b-tr>
@@ -121,6 +121,25 @@ export default {
                 return true;
             }
             return true;
+        },
+
+        deleteEnterprise() {
+            this.$swal({
+                title: "Você tem certeza que deseja excluir essa empresa?",
+                text: "Não será possível recuperar!",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#198754",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "Sim, excluir",
+                cancelButtonText: "Cancelar",
+            }).then((result) => {
+                if (result.isConfirmed) {
+                console.log("confirmou")
+                } else {
+                    console.log("cancelou")
+                }
+            });
         }
     }
 }
