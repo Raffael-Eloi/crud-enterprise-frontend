@@ -65,13 +65,13 @@
                   <b-td class="text-center"></b-td>
                   <b-td class="text-center">
                     <router-link :to="{ name: 'visualize-enterprise' }">
+                        <i class="fa-solid fa-eye me-3 text-primary"></i>
+                    </router-link>
+                    <router-link :to="{ name: 'edit-enterprise' }">
                         <i
-                        class="fa-solid fa-eye me-3 text-primary"
+                        class="fa-solid fa-pencil me-3"
                         ></i>
                     </router-link>
-                    <i
-                      class="fa-solid fa-pencil me-3"
-                    ></i>
                     <i
                       class="fa-solid fa-trash me-3 text-danger"
                       @click.prevent="deleteRequirementModal(file)"

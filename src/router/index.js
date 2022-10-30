@@ -3,6 +3,7 @@ import Home from '../views/Home.vue';
 import Enterprise from '../views/Enterprise.vue';
 import CreateEnterprise from '../views/enterprise-CRUD/CreateEnterprise.vue';
 import VisualizeEnterprise from '../views/enterprise-CRUD/VisualizeEnterprise.vue';
+import EditEnterprise from '../views/enterprise-CRUD/EditEnterprise.vue';
 
 const routes = [
   {
@@ -24,6 +25,11 @@ const routes = [
     path: '/empresa/visualizar',
     name: 'visualize-enterprise',
     component: VisualizeEnterprise
+  },
+  {
+    path: '/empresa/editar',
+    name: 'edit-enterprise',
+    component: EditEnterprise
   }
 ]
 
