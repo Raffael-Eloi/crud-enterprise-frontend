@@ -64,13 +64,13 @@
                   <b-td class="text-center"></b-td>
                   <b-td class="text-center"></b-td>
                   <b-td class="text-center">
-                    <i
-                      class="fa-solid fa-eye me-3 text-primary"
-                      @click.prevent="openModalShowFile(file)"
-                    ></i>
+                    <router-link :to="{ name: 'visualize-enterprise' }">
+                        <i
+                        class="fa-solid fa-eye me-3 text-primary"
+                        ></i>
+                    </router-link>
                     <i
                       class="fa-solid fa-pencil me-3"
-                      @click.prevent="openModalEditRequirement(file)"
                     ></i>
                     <i
                       class="fa-solid fa-trash me-3 text-danger"
